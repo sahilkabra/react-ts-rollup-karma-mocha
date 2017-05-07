@@ -1,12 +1,22 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
+        "baseUrl": ".",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
         "jsx": "react",
-        "module": "node",
+        "module": "es6",
+        "moduleResolution": "node",
         "noImplicitAny": true,
         "outDir": "dist",
+        "paths": {
+            "app/*": ["src/*"]
+        },
+        "preserveConstEnums": true,
         "sourceMap": true,
-        "target": "ES6"
+        "strictNullChecks": true,
+        "target": "es6"
     },
     "exclude": [
         "node_modules"

@@ -4,13 +4,14 @@
   "description": "React client for Expense Manager",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "test": "karma start"
   },
-  "author": "",
+  "author": "Sahil Kabra",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^3.5.2",
-    "@types/expect.js": "^0.3.29",
     "@types/mocha": "^2.2.41",
     "@types/ramda": "0.0.8",
     "@types/react": "^15.0.24",
@@ -25,6 +26,8 @@
     "mocha": "^3.3.0",
     "resolve": "^1.3.3",
     "rollup": "^0.41.6",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-typescript2": "^0.4.1",
     "tslib": "^1.7.0",
     "typescript": "^2.3.2"
